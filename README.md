@@ -2,6 +2,10 @@
 
 ### Set Ups
 
+#### Kali
+
+update: ```$apt-get clean && apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y```
+
 #### Metasploitable
 
 username: msfadmin
