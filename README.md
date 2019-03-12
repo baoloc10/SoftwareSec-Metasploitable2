@@ -56,9 +56,9 @@ The first time starting metasploit will take a little bit as it needs to initial
 
 Notice that there is an IRC service running on port 6667 during our nmap port scan. 
 
-(https://www.cvedetails.com/cve/cve-2010-2075)
+https://www.cvedetails.com/cve/cve-2010-2075
 
-(https://www.rapid7.com/db/modules/exploit/unix/irc/unreal_ircd_3281_backdoor)
+https://www.rapid7.com/db/modules/exploit/unix/irc/unreal_ircd_3281_backdoor
 
 There is a backdoor exploit we can use. To search for a unix irc exploit. 
 
@@ -134,9 +134,9 @@ Extra: Meterpreter - For Stealth, Flexibility, and Reliablity. ```help``` comman
 
 Postgress exploit
 
-(https://www.cvedetails.com/cve/cve-2007-3280)
+https://www.cvedetails.com/cve/cve-2007-3280
 
-(https://www.rapid7.com/db/modules/exploit/linux/postgres/postgres_payload)
+https://www.rapid7.com/db/modules/exploit/linux/postgres/postgres_payload
 
 ```use exploit/linux/postgres/postgres_payload```
 
@@ -153,6 +153,10 @@ Postgress exploit
 ```exploit```
 
 We have a meterpreter as the postgres user. But we can elevate our priviledge to root
+
+https://www.cvedetails.com/cve/cve-2009-1185
+
+https://www.rapid7.com/db/modules/exploit/linux/local/udev_netlink
 
 ```meterpreter> background``` Note the session ID
 
