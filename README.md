@@ -54,7 +54,13 @@ The first time starting metasploit will take a little bit as it needs to initial
 
 ### Finding Exploits 
 
-Notice that there is an IRC service running on port 6667 during our nmap port scan. There is a backdoor exploit we can use. To search for a unix irc exploit 
+Notice that there is an IRC service running on port 6667 during our nmap port scan. 
+
+(https://www.cvedetails.com/cve/cve-2010-2075)
+
+(https://www.rapid7.com/db/modules/exploit/unix/irc/unreal_ircd_3281_backdoor)
+
+There is a backdoor exploit we can use. To search for a unix irc exploit. 
 
 ```search type:exploit platform:unix irc```
 
@@ -127,6 +133,10 @@ We should now have credentials for users on the remote machine. We can verify ou
 Extra: Meterpreter - For Stealth, Flexibility, and Reliablity. ```help``` command
 
 Postgress exploit
+
+(https://www.cvedetails.com/cve/cve-2007-3280)
+
+(https://www.rapid7.com/db/modules/exploit/linux/postgres/postgres_payload)
 
 ```use exploit/linux/postgres/postgres_payload```
 
